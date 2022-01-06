@@ -1,3 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+n_samples = 1000
+n_features = 2
+mu = 10
+sigma = 2.5
+
+np.random.seed(42)
+X = np.random.normal(mu, sigma, size=(n_samples, n_features))
+
+
+
 def covariance(X,Y):
     
     xbar = np.mean(X)
